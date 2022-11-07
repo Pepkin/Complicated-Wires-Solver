@@ -1,5 +1,3 @@
-# Complicated-Wires-Solver
-A solver for Complicated Wires form the game Keep talking and nobody explodes
 # How to use:
 Write every color like the following example.If you dont, the program will not work properly
 ex: Blue_and_Red,
