@@ -5,33 +5,37 @@ using namespace std;
 // Dovurshvash za star na case 1
 
 int main() {
+
     char again = 'y';
     do {
-        string color;
+        char color[100];
         int colorCode = 0;
         string answer1, answer2;
         bool led;
         bool star;
-        string blue_color = "Blue";
-        string red_color = "Red";
-        string white_color = "White";
-        string blue_red_color = "Blue_and_Red";
-        string red_white_color = "Red_and_White";
-        string blue_white_color = "Blue_and_White";
+        char blue_color[] = "Blue\n";
+        char red_color[] = "Red\n";
+        char white_color[] = "Whiten\n";
+        char blue_red_color[] = "Blue and Red\n";
+        char red_white_color[] = "Red and White\n";
+        char blue_white_color[] = "Blue and White\n";
 
         cout << "Enter the colors of the wire: ";
-        cin >> color;
+        fgets(color, 100, stdin);
         cout << "Does the wire has LED y/n: ";
         cin >> answer1;
         cout << "Does the wire has a star sign y/n:";
         cin >> answer2;
 
-        int blue = color.compare(blue_color);
-        int bluew = color.compare(blue_white_color);
-        int red = color.compare(red_color);
-        int redw = color.compare(red_white_color);
-        int white = color.compare(white_color);
-        int bluered = color.compare(blue_red_color);
+
+
+
+        int blue = strcmp(color, blue_color);
+        int bluew = strcmp(color, blue_white_color);
+        int red = strcmp(color, red_color);
+        int redw = strcmp(color, red_white_color);
+        int white = strcmp(color, white_color);
+        int bluered = strcmp(color, blue_red_color);
 
         if (blue == 0 || bluew == 0) {
             colorCode = 1;
@@ -71,7 +75,7 @@ int main() {
                 cout << "Is there a parallel port? y/n: ";
                 cin >> p;
                 if (p == "y") {
-                    cout << "Cut"<< endl;
+                    cout << "Cut" << endl;
                     cout << "\n";
                 }
                 else {
@@ -232,7 +236,7 @@ int main() {
             break;
         }
     } while (again == 'y');
-     
+
+
     return 0;
 }
-
