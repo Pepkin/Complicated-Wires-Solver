@@ -15,7 +15,7 @@ int main() {
         bool star;
         char blue_color[] = "Blue\n";
         char red_color[] = "Red\n";
-        char white_color[] = "Whiten\n";
+        char white_color[] = "White\n";
         char blue_red_color[] = "Blue and Red\n";
         char red_white_color[] = "Red and White\n";
         char blue_white_color[] = "Blue and White\n";
